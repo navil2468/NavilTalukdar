@@ -1,5 +1,15 @@
 @import "tailwindcss";
-/* 
+
+@font-face {
+    font-family: Inter;
+    src: url('../src/assets/fonts/Inter_18pt-Regular.ttf');
+}
+ 
 :root {
-  
-} */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color-scheme: dark;
+} 
+
+@theme {
+    --font-inter: 'Inter', sans-serif;
+}
