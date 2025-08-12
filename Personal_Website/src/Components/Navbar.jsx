@@ -1,18 +1,32 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import HamburgerMenu from './HamburgerMenu';
+import { useState } from 'react'
+import Hamburger from 'hamburger-react'
 
 function Navbar() {
-  const [open, setopen] = useState(false);
-  
+  const[ open, setOpen ] = useState(false)
   return (
-    <div className='mx-6 mt-7 flex justify-between'>
-      <Link to='/'><h1 className='font-bold text-xl hover:text-blue-300 cursor-pointer'>NAVIL TALUKDAR</h1></Link>
-      <div className='text-3xl'>
-        {/* HAMBURGER MENU */}
+    <div className='lg:mx-7 sm:mx-7 mx-10 mt-6 flex relative justify-between font-mono'>
+      <Link to='/'><h1 className='font-mono font-bold mt-2 text-2xl hover:text-pink-100 cursor-pointer'>Navil Talukdar</h1></Link>
+      <div className=''>
+        <Hamburger toggled={open} toggle={setOpen}/>
+        {open && 
+        <div className='text-pink-100 fixed top-0 left-0 z-50 bg-blue-950 h-screen w-screen px-5 py-5 space-y-18'>
+          <div className='lg:pl-271 pt-1 sm:pl-159 pl-98'>
+            <Hamburger size={35} toggled={open} toggle={setOpen} />
+          </div>
+          <ul className='text-center space-y-15 text-5xl'>
+            <li className='hover:text-blue-300 cursor-pointer'>Projects</li>
+            <li className='hover:text-blue-300 cursor-pointer'>Resume</li>
+            <li className='hover:text-blue-300 cursor-pointer'>Contact</li>
+          </ul>
+          {/* Icons */}
+        </div>
+        }
       </div>
     </div>
   )
 }
 
-export default Navbar
+export default Navbar;
+
