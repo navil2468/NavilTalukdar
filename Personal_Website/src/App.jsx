@@ -1,17 +1,15 @@
 import React from 'react'
 import Navbar from './Components/NavBar'
+import HeroSection from './Components/HeroSection'
 
 
 function App() {
   return (
     <div>
       <Navbar />
+      <HeroSection />
     </div>
   )
 }
 
 export default App
-
-/* 
-(LIGHT MODE): Primary - #003049, Secondary - #fdf0d5
-(DARK MODE): Primary - #fdf0d5, Seconday - #022e45 */
