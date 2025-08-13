@@ -12,7 +12,7 @@ function Navbar() {
       <div >
         <Hamburger toggled={open} toggle={setOpen}/>
         {open && 
-        <div className='text-pink-100 fixed top-0 left-0 z-50 bg-blue-950 h-screen w-screen px-5 py-5 space-y-18'>
+        <div className='text-neutral-600 fixed top-0 left-0 z-50 bg-pink-200 h-screen w-screen px-5 py-5 space-y-18'>
           <div className='absolute top-5 lg:right-8 pt-1 right-10'>
             <Hamburger size={35} toggled={open} toggle={setOpen} />
           </div>
