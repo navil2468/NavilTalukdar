@@ -7,7 +7,7 @@ import { SocialIcon } from 'react-social-icons'
 function Navbar() {
   const[ open, setOpen ] = useState(false)
   return (
-    <div className='lg:mx-7 sm:mx-7 mx-10 mt-6 flex relative justify-between font-mono'>
+    <div className='lg:mx-7 sm:mx-7 mx-10 mt-6 flex justify-between font-mono sticky top-0 z-50 py-3 backdrop-blur-lg '>
       <Link to='/'><h1 className='font-mono font-bold mt-2 text-2xl hover:text-pink-100 cursor-pointer'>Navil Talukdar</h1></Link>
       <div >
         <Hamburger toggled={open} toggle={setOpen}/>
