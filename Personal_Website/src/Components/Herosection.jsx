@@ -3,11 +3,15 @@ import profile from '../assets/ProfilePic.JPG'
 
 function HeroSection() {
   return (
-    <div className='lg:mx-7 sm:mx-7 mx-10 mt-6 flex relative justify-center font-mono' >
-        <div>
-            <h1>THIS IS ME</h1>
+    <div className='lg:mx-7 sm:mx-7 mx-10 mt-18 lg:flex relative lg:justify-center font-mono' >
+        <div className='mt-15 lg:space-y-3 text-center text-pink-200'>
+            <h1 className='text-9xl'>THIS</h1>
+            <h1 className='text-9xl'>IS ME</h1>
+            <h1 className='text-8xl max-lg:hidden'>➡️➡️➡️➡️</h1>
         </div>
-        <img className='w-52 h-62 rounded-4xl border border-pink-200' src={profile} alt='Navil Talukdar'/>
+        <div className='lg:mt-0 mt-15 lg:ml-35'>
+          <img className='w-98 h-133 rounded-xl mx-auto' src={profile} alt='Navil Talukdar'/>
+        </div>
     </div>
   )
 }
