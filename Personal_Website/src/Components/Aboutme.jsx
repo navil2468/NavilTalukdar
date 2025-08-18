@@ -11,7 +11,7 @@ function Aboutme() {
     </div>
 
     <div className='text-center flex items-center sm:pt-0 text-blue-200 lg:w-150 sm:w-115'>
-      <ul className='px-10 lg:space-y-7 lg:text-end sm:text-end text-center space-y-12 lg:text-4xl text-3xl'>
+      <ul className='px-10 lg:space-y-8 lg:text-end sm:text-end text-center space-y-10 lg:text-4xl text-3xl'>
         <li>Columbia University Sophomore</li>
         <li>CS Major</li>
         <li>Lifelong Puzzle Solver</li>
