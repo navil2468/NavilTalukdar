@@ -2,21 +2,21 @@ import React from 'react'
 
 function Aboutme() {
   return (
-    <div className='lg:mx-7 sm:mx-7 mx-10 mt-45 lg:flex relative lg:justify-center font-mono' >
-        <div className='text-center flex items-center text-pink-200 lg:w-150 max-w-screen'>
-           <ul className='lg:space-y-3 text-start list-disc text-4xl'>
-            <li>Columbia University sophomore</li>
+    <div className='mt-55 lg:flex sm:flex relative container mx-auto lg:justify-center font-mono items-center mb-30' >
+        <div className='bg-pink-100 mx-15 py-5 text-neutral-900 text-center rounded-4xl sm:px-10 lg:px-14 lg:py-7'>
+            <h1 className='sm:text-8xl text-9xl'>WHO</h1>
+            <h1 className='sm:text-8xl text-9xl'>AM</h1>
+            <h1 className='sm:text-8xl text-9xl'>I<span className='text-red-600'>?</span></h1>
+        </div>
+        <div className='text-center flex items-center pt-25 sm:pt-0 text-blue-200 lg:w-150 sm:w-115'>
+           <ul className='px-10 lg:space-y-7 lg:text-end sm:text-end text-center space-y-12 text-4xl'>
+            <li>Columbia University Sophomore</li>
             <li>CS Major</li>
-            <li>Lifelong puzzle-solver</li>
-            <li>Front-end developer</li>
+            <li>Lifelong Puzzle Solver</li>
+            <li>Front-End Developer</li>
             {/* <li>Full-stack builder fluent in React, Node.js, Tailwind, and PostgreSQL</li> */}
             <li>Loves challeneges and riddles</li>
            </ul>
-        </div>
-        <div className='bg-pink-100 p-5 px-10 text-neutral-900 text-center rounded-4xl'>
-            <h1 className='text-9xl'>WHO</h1>
-            <h1 className='text-9xl'>AM</h1>
-            <h1 className='text-9xl'>I❓</h1>
         </div>
     </div>
   )
