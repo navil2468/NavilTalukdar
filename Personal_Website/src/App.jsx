@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from './Components/NavBar'
-import HeroSection from './Components/HeroSection'
+import HeroSection from './Components/Herosection'
 import Aboutme from './Components/Aboutme'
+import Hobbies from './Components/Hobbies'
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <Aboutme />
+      <Hobbies />
     </div>
   )
 }
