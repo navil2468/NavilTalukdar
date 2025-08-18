@@ -16,7 +16,7 @@ function Navbar() {
           <div className='absolute top-3 right-7'>
             <Hamburger size={35} toggled={open} toggle={setOpen} />
           </div>  
-          <ul className='pt-30 text-center space-y-15 text-4xl lg:text-5xl'>
+          <ul className='pt-35 text-center space-y-15 text-4xl lg:text-5xl'>
             <li className='hover:text-blue-300 cursor-pointer'>PROJECTS</li>
             <li className='hover:text-blue-300 cursor-pointer'><a href='https://drive.google.com/file/d/1gMRnmk5pCGkwX2nCpzm6Te_Slc9DQYKg/view?usp=share_link' target='_blank'>RESUME</a></li>
             <li className='hover:text-blue-300 cursor-pointer'>CONTACT</li>
