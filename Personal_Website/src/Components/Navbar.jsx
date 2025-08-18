@@ -8,7 +8,7 @@ function Navbar() {
   const[ open, setOpen ] = useState(false)
   return (
     <div className='px-7 flex justify-between font-mono sticky top-0 z-150 py-3 backdrop-blur-lg'>
-      <Link to='/'><h1 className='font-bold mt-2 text-2xl hover:text-pink-100 cursor-pointer'>Navil Talukdar</h1></Link>
+      <Link to='/'><h1 className='font-bold mt-2 text-2xl hover:text-blue-200 cursor-pointer'>Navil Talukdar</h1></Link>
       <div >
         <Hamburger toggled={open} toggle={setOpen}/>
         {open && 
