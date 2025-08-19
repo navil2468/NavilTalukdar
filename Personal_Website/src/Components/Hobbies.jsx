@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hobbies() {
   return (
-    <div className='flex-col justify-center text-center font-mono mt-55 mb-25'>
+    <div data-aos='fade-up' className='flex-col justify-center text-center font-mono mt-55 mb-25'>
       <div className='bg-pink-100 text-neutral-900 rounded-3xl mx-auto inline-block lg:px-15 sm:px-10 px-5 py-8'>
         <h1 className='lg:text-8xl sm:text-7xl text-6xl'>HOBBIES</h1>
       </div>

@@ -1,10 +1,9 @@
 import React from 'react'
 import Navbar from './Components/Navbar'
-import { Link } from 'react-router-dom';
 
 function Contact() {
   return (
-    <div>
+    <div >
       <Navbar />
       <div className='flex-col justify-center text-center font-mono mt-10'>
         <div className='bg-pink-100 text-neutral-900 rounded-3xl mx-auto inline-block lg:px-15 sm:px-10 px-5 py-8'>
