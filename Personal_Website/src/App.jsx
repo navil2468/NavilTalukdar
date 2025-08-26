@@ -16,6 +16,7 @@ function App() {
 
   return (
     <div>
+      <title>Navil Talukdar</title>
       <Navbar />
       <HeroSection />
       <Aboutme />
