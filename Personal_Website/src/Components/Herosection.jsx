@@ -9,7 +9,7 @@ function HeroSection() {
             <h1 className='text-9xl tracking-tighter'>IS ME</h1>
         </div>
         <div className='lg:mt-0 mt-15 lg:ml-35'>
-          <img className='w-98 h-133 rounded-xl mx-auto' src={profile} alt='Navil Talukdar'/>
+          <img className='lg:h-133 sm:h-130 max-w-full h-110 rounded-xl mx-auto' src={profile} alt='Navil Talukdar'/>
         </div>
     </div>
   )
