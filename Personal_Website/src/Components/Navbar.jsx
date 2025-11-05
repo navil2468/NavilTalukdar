@@ -19,7 +19,7 @@ function Navbar() {
           </div>  
           <ul className='pt-35 text-center space-y-15 text-4xl lg:text-5xl'>
             <li className='hover:text-blue-300 cursor-pointer'><Link to={'../Projects'}>PROJECTS</Link></li>
-            <li className='hover:text-blue-300 cursor-pointer'><a href='https://drive.google.com/file/d/1gMRnmk5pCGkwX2nCpzm6Te_Slc9DQYKg/view?usp=share_link' target='_blank'>RESUME</a></li>
+            <li className='hover:text-blue-300 cursor-pointer'><a href='https://drive.google.com/file/d/1lOx5qPPcJxLhOIYvBAcRrWNpXUzJLXOO/view?usp=sharing' target='_blank'>RESUME</a></li>
             <Link to={'../Contact'}><li className='hover:text-blue-300 cursor-pointer'>CONTACT</li></Link>
           </ul>
           <div className=' pt-24 flex justify-center space-x-7 text-5xl'>
