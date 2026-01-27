@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Navbar from './Components/Navbar'
 import HeroSection from './Components/Herosection'
-import AboutMe from './Components/AboutMe'
+import Aboutme from './Components/Aboutme'
 import Hobbies from './Components/Hobbies'
 import Ending from './Components/Ending'
 import aos from 'aos'
@@ -19,7 +19,7 @@ function App() {
       <title>Navil Talukdar</title>
       <Navbar />
       <HeroSection />
-      <AboutMe />
+      <Aboutme />
       <Hobbies />
       <Ending />
     </div>

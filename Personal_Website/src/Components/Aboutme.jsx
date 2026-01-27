@@ -1,6 +1,6 @@
 import React from 'react'
 
-function AboutMe() {
+function Aboutme() {
   return (
     <div data-aos='fade-up' className='mt-55 relative container mx-auto mb-30 flex flex-col items-center gap-12 sm:flex-row sm:justify-center sm:items-center sm:gap-16'>
       <div className='bg-gradient-to-br from-pink-100 to-pink-50 py-8 px-12 text-neutral-900 text-center rounded-4xl inline-block shadow-2xl border-4 border-pink-200'>
@@ -34,4 +34,4 @@ function AboutMe() {
   )
 }
 
-export default AboutMe
+export default Aboutme
