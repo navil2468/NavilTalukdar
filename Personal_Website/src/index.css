@@ -1,15 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
 @import "tailwindcss";
 
 @font-face {
-    font-family: Inter;
-    src: url('../src/assets/fonts/Inter_18pt-Regular.ttf');
+  font-family: Inter;
+  src: url('../src/assets/fonts/Inter_18pt-Regular.ttf');
 }
- 
+
 :root {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color-scheme: dark;
+  font-family: 'Poppins', sans-serif;
+  color-scheme: dark;
 } 
 
 @theme {
-    --font-inter: 'Inter', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
 }

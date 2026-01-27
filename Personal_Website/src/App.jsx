@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Navbar from './Components/Navbar'
 import HeroSection from './Components/Herosection'
-import Aboutme from './Components/Aboutme'
+import Aboutme from './Components/AboutMe'
 import Hobbies from './Components/Hobbies'
 import Ending from './Components/Ending'
 import aos from 'aos'
