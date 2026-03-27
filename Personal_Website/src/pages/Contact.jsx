@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+//Connect with real email service 
+
 function Contact() {
   const [form, setForm] = useState({ firstName: '', lastName: '', email: '', subject: '', message: '' });
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
