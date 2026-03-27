@@ -1,29 +1,35 @@
 import React, { useEffect } from 'react'
-import Navbar from './Components/Navbar'
-import HeroSection from './Components/Herosection'
-import Aboutme from './Components/Aboutme'
-import Hobbies from './Components/Hobbies'
-import Ending from './Components/Ending'
+import Navbar from './pages/Navbar'
+import HeroSection from './pages/Herosection'
+import Aboutme from './pages/Aboutme'
+import Experience from './pages/Experience'
+import Projects from './pages/Projects'
+import Skills from './pages/Skills'
+import Contact from './pages/Contact'
+import Footer from './pages/Footer'
 import aos from 'aos'
 import "aos/dist/aos.css";
 
-
 function App() {
-
   useEffect(() => {
-    aos.init({duration: 1200, once: true})
+    aos.init({ duration: 1200, once: true });
   }, []);
 
   return (
-    <div>
+    <div style={{ backgroundColor: '#3C3D37', minHeight: '100vh' }}>
       <title>Navil Talukdar</title>
       <Navbar />
-      <HeroSection />
-      <Aboutme />
-      <Hobbies />
-      <Ending />
+      <main>
+        <HeroSection />
+        <Aboutme />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

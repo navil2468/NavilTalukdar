@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './Components/Navbar'
+import Navbar from './pages/Navbar'
 
 function Projects() {
   const url1 = 'https://www.golamsvision.com';

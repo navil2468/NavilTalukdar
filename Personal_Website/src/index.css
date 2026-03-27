@@ -9,7 +9,21 @@
 :root {
   font-family: 'Poppins', sans-serif;
   color-scheme: dark;
-} 
+
+  --color-bg:         #3C3D37;
+  --color-bg-dark:    #181C14;
+  --color-surface:    #697565;
+  --color-surface-hover: #7a8875;
+  --color-cream:      #ECDFCC;
+  --color-border:     rgba(236, 223, 204, 0.2);
+  --color-text:       #ECDFCC;
+  --color-text-muted: rgba(236, 223, 204, 0.5);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
 
 @theme {
   --font-poppins: 'Poppins', sans-serif;
