@@ -2,8 +2,8 @@ import React from 'react';
 
 const navLinks = [
   { label: 'About',      id: 'about' },
-  { label: 'Experience', id: 'experience' },
   { label: 'Projects',   id: 'projects' },
+  { label: 'Experience', id: 'experience' },
   { label: 'Skills',     id: 'skills' },
   { label: 'Contact',    id: 'contact' },
 ];

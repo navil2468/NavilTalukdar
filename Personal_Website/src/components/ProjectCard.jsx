@@ -13,7 +13,7 @@ export default function ProjectCard(props) {
         backgroundColor: hovered ? '#7a8875' : '#697565',
         color: '#ECDFCC',
         border: '1px solid rgba(236, 223, 204, 0.25)',
-        maxWidth: '33%',
+        maxWidth: '31%',
         padding: '1.25rem 1.25rem 1.5rem',
         textDecoration: 'none',
         transform: hovered ? 'translateY(-6px) scale(1.01)' : 'translateY(0) scale(1)',
@@ -25,7 +25,7 @@ export default function ProjectCard(props) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <h1 className='text-xl font-semibold mb-2' style={{ color: '#ECDFCC' }}>
+      <h1 className='text-2xl font-semibold mb-4' style={{ color: '#ECDFCC' }}>
         {props.title}
       </h1>
       {props.src && (

@@ -14,7 +14,7 @@ function Skills() {
         Skills
       </p>
       <h2 className="text-5xl font-bold mb-12" style={{ color: '#ECDFCC' }}>
-        What I use
+        What can I use?
       </h2>
       <div className="flex flex-col gap-8">
         {categories.map((category) => (
