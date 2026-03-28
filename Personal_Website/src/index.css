@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
 @import "tailwindcss";
 
-@font-face {
+/* @font-face {
   font-family: Inter;
   src: url('../src/assets/fonts/Inter_18pt-Regular.ttf');
-}
+} */
 
 :root {
   font-family: 'Poppins', sans-serif;
