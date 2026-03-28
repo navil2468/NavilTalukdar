@@ -1,7 +1,7 @@
 import React from 'react';
 import PrimaryCard from '../components/PrimaryCard';
 
-function Aboutme() {
+function AboutMe() {
   return (
     <section id="about" data-aos="fade-up" style={{ padding: '6rem 8rem' }}>
       <p className="text-xs uppercase tracking-widest mb-2" style={{ color: 'rgba(236, 223, 204, 0.5)' }}>
@@ -24,4 +24,4 @@ function Aboutme() {
   );
 }
 
-export default Aboutme;
+export default AboutMe;

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Navbar from './pages/Navbar'
 import HeroSection from './pages/Herosection'
-import Aboutme from './pages/Aboutme'
+import AboutMe from './pages/AboutMe'
 import Experience from './pages/Experience'
 import Projects from './pages/Projects'
 import Skills from './pages/Skills'
@@ -21,7 +21,7 @@ function App() {
       <Navbar />
       <main>
         <HeroSection />
-        <Aboutme />
+        <AboutMe />
         <Experience />
         <Projects />
         <Skills />
