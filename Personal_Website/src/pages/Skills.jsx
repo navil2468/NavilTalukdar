@@ -9,11 +9,11 @@ const categories = [
 
 function Skills() {
   return (
-    <section id="skills" data-aos="fade-up" style={{ padding: '6rem 8rem' }}>
+    <section id="skills" data-aos="fade-up" className="px-5 py-12 sm:px-10 sm:py-16 lg:px-32 lg:py-24">
       <p className="text-xs uppercase tracking-widest mb-2" style={{ color: 'rgba(236, 223, 204, 0.5)' }}>
         Skills
       </p>
-      <h2 className="text-5xl font-bold mb-12" style={{ color: '#ECDFCC' }}>
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-12" style={{ color: '#ECDFCC' }}>
         What can I use?
       </h2>
       <div className="flex flex-col gap-8">

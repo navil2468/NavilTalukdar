@@ -10,7 +10,7 @@ export default function PrimaryCard(props) {
         backgroundColor: hovered ? '#7a8875' : '#697565',
         color: '#ECDFCC',
         border: '1px solid rgba(236, 223, 204, 0.25)',
-        maxWidth: '33%',
+        maxWidth: '480px',
         transform: hovered ? 'translateY(-4px)' : 'translateY(0)',
         boxShadow: hovered
           ? '0 12px 32px rgba(24, 28, 20, 0.5)'

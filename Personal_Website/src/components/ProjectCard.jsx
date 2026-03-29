@@ -13,7 +13,7 @@ export default function ProjectCard(props) {
         backgroundColor: hovered ? '#7a8875' : '#697565',
         color: '#ECDFCC',
         border: '1px solid rgba(236, 223, 204, 0.25)',
-        maxWidth: '31%',
+        width: '100%',
         padding: '1.25rem 1.25rem 1.5rem',
         textDecoration: 'none',
         transform: hovered ? 'translateY(-6px) scale(1.01)' : 'translateY(0) scale(1)',

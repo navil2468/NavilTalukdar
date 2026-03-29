@@ -3,14 +3,14 @@ import ProjectCard from '../components/ProjectCard';
 
 function Projects() {
   return (
-    <section id="projects" data-aos="fade-up" style={{ padding: '6rem 8rem' }}>
+    <section id="projects" data-aos="fade-up" className="px-5 py-12 sm:px-10 sm:py-16 lg:px-32 lg:py-24">
       <p className="text-xs uppercase tracking-widest mb-2" style={{ color: 'rgba(236, 223, 204, 0.5)' }}>
         Projects
       </p>
-      <h1 className="text-5xl font-bold tracking-tight leading-none mb-8" style={{ color: '#ECDFCC' }}>
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-none mb-8" style={{ color: '#ECDFCC' }}>
         Notable Work
       </h1>
-      <div className="flex flex-wrap gap-6 items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <ProjectCard
           title="Offset"
           src="/Offset.png"

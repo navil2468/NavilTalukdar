@@ -7,13 +7,13 @@ function HeroSection() {
     <section
       id="hero"
       data-aos="fade-up"
-      className="min-h-screen flex items-center justify-center px-20"
+      className="min-h-screen flex items-center justify-center px-5 sm:px-10 lg:px-20"
     >
       <div className="flex flex-col items-center text-center gap-5 max-w-3xl w-full">
         <p className="text-xs uppercase tracking-widest font-light" style={{ color: 'rgba(236, 223, 204, 0.5)' }}>
           My name is
         </p>
-        <h1 className="text-7xl font-bold tracking-tight leading-none" style={{ color: '#ECDFCC' }}>
+        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight leading-none" style={{ color: '#ECDFCC' }}>
           Navil Talukdar
         </h1>
         <div className="flex flex-col items-center gap-2 mt-1">

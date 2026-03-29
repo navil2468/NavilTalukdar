@@ -3,11 +3,11 @@ import PrimaryCard from '../components/PrimaryCard';
 
 function AboutMe() {
   return (
-    <section id="about" data-aos="fade-up" style={{ padding: '6rem 8rem' }}>
+    <section id="about" data-aos="fade-up" className="px-5 py-12 sm:px-10 sm:py-16 lg:px-32 lg:py-24">
       <p className="text-xs uppercase tracking-widest mb-2" style={{ color: 'rgba(236, 223, 204, 0.5)' }}>
         About Me
       </p>
-      <h1 className="text-5xl font-bold tracking-tight leading-none mb-8" style={{ color: '#ECDFCC' }}>
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-none mb-8" style={{ color: '#ECDFCC' }}>
         Computer Science @ Columbia
       </h1>
       <div className="mb-8">

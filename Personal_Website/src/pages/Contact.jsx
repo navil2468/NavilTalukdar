@@ -28,7 +28,7 @@ function Contact() {
   };
 
   return (
-    <section id="contact" data-aos="fade-up" style={{ padding: '6rem 8rem' }}>
+    <section id="contact" data-aos="fade-up" className="px-5 py-12 sm:px-10 sm:py-16 lg:px-32 lg:py-24">
       <p className="text-xs uppercase tracking-widest mb-2" style={{ color: 'rgba(236, 223, 204, 0.5)' }}>
         Contact
       </p>
@@ -47,7 +47,7 @@ function Contact() {
           maxWidth: '720px',
         }}
       >
-        <div className="flex gap-4">
+        <div className="flex flex-col sm:flex-row gap-4">
           <div style={{ flex: 1 }}>
             <label style={labelStyle}>First Name</label>
             <input name="firstName" placeholder="First Name" value={form.firstName} onChange={handleChange} style={inputStyle}

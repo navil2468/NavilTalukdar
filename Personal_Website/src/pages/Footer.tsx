@@ -8,7 +8,7 @@ function Footer() {
       style={{
         backgroundColor: '#181C14',
         borderTop: '1px solid rgba(236, 223, 204, 0.1)',
-        padding: '3rem 8rem',
+        padding: '3rem clamp(1.25rem, 8vw, 8rem)',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
