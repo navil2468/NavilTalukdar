@@ -1,10 +1,42 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 //Connect with real email service 
 
 function Contact() {
-  const [form, setForm] = useState({ firstName: '', lastName: '', email: '', subject: '', message: '' });
-  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+  const [formData, setFormData] = useState({ firstName: '', lastName: '', email: '', subject: '', message: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const templateParams = {
+      first_name: formData.firstName,
+      last_name: formData.lastName,
+      email: formData.email,
+      subject: formData.subject,
+      message: formData.message
+    }
+
+    emailjs.send("service_75pgrk5", "template_g3i1ikj", templateParams, '8EPJp1sFt2fTo6DRp').then(
+      (response) => {
+        console.log("Success in emailing", response.status, response.text);
+        alert("Success! Check your inbox for a reply soon!");
+        setFormData({
+          firstName: '', lastName: '', email: '', subject: '', message: ''
+        })
+        setIsSubmitting(false);
+      },
+      (error) => {
+        console.log("Failure in emailing", error);
+        alert("Error in sending email, please try again.")
+        setIsSubmitting(false);
+      }
+    )
+  }
 
   const inputStyle = {
     backgroundColor: 'rgba(24, 28, 20, 0.4)',
@@ -50,14 +82,14 @@ function Contact() {
         <div className="flex flex-col sm:flex-row gap-4">
           <div style={{ flex: 1 }}>
             <label style={labelStyle}>First Name</label>
-            <input name="firstName" placeholder="First Name" value={form.firstName} onChange={handleChange} style={inputStyle}
+            <input name="firstName" placeholder="First Name" value={formData.firstName} onChange={handleChange} style={inputStyle}
               onFocus={e => e.target.style.borderColor = 'rgba(236,223,204,0.6)'}
               onBlur={e => e.target.style.borderColor = 'rgba(236,223,204,0.2)'}
             />
           </div>
           <div style={{ flex: 1 }}>
             <label style={labelStyle}>Last Name</label>
-            <input name="lastName" placeholder="Last Name" value={form.lastName} onChange={handleChange} style={inputStyle}
+            <input name="lastName" placeholder="Last Name" value={formData.lastName} onChange={handleChange} style={inputStyle}
               onFocus={e => e.target.style.borderColor = 'rgba(236,223,204,0.6)'}
               onBlur={e => e.target.style.borderColor = 'rgba(236,223,204,0.2)'}
             />
@@ -66,7 +98,7 @@ function Contact() {
 
         <div>
           <label style={labelStyle}>Email</label>
-          <input name="email" placeholder="your-email@email.com" value={form.email} onChange={handleChange} style={inputStyle}
+          <input name="email" placeholder="your-email@email.com" value={formData.email} onChange={handleChange} style={inputStyle}
             onFocus={e => e.target.style.borderColor = 'rgba(236,223,204,0.6)'}
             onBlur={e => e.target.style.borderColor = 'rgba(236,223,204,0.2)'}
           />
@@ -74,7 +106,7 @@ function Contact() {
 
         <div>
           <label style={labelStyle}>Subject</label>
-          <input name="subject" placeholder="Let's collaborate" value={form.subject} onChange={handleChange} style={inputStyle}
+          <input name="subject" placeholder="Let's collaborate" value={formData.subject} onChange={handleChange} style={inputStyle}
             onFocus={e => e.target.style.borderColor = 'rgba(236,223,204,0.6)'}
             onBlur={e => e.target.style.borderColor = 'rgba(236,223,204,0.2)'}
           />
@@ -85,7 +117,7 @@ function Contact() {
           <textarea
             name="message"
             placeholder="Tell me about your project or how I can help..."
-            value={form.message}
+            value={formData.message}
             onChange={handleChange}
             rows={5}
             style={{ ...inputStyle, resize: 'vertical' }}
@@ -95,6 +127,7 @@ function Contact() {
         </div>
 
         <button
+          onClick={handleSubmit}
           className="rounded-full font-medium text-sm tracking-wide transition-all duration-200"
           style={{
             backgroundColor: '#ECDFCC',
