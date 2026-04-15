@@ -21,7 +21,7 @@ function HeroSection() {
             and I'm a
           </p>
           <h2 className="text-2xl md:text-3xl tracking-wide" style={{ color: '#ECDFCC' }}>
-            Builder | Software Engineer | CS Major
+            Builder | Software Engineer | Thinker
           </h2>
           <h3 className="text-lg tracking-wide" style={{ color: 'rgba(236, 223, 204, 0.55)' }}>
             Based in New York
